@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_first"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.ak.stickmanarcher2.First"
+    android:background="@drawable/stickman2">
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-5155144708129978/6581695114">
+    </com.google.android.gms.ads.AdView>
+
+
+
+    <Button
+        android:onClick="next"
+        android:id="@+id/Button1"
+        android:layout_marginTop="83dp"
+        android:layout_below="@+id/adView1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Start Game"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Button1"
+        android:id="@+id/Button2"
+        android:text="About"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Button2"
+        android:text="Exit"
+        android:id="@+id/Exitt"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/textView"
+        android:text="Powerd by Across"
+        android:layout_marginLeft="138dp"
+        android:textSize="30dp"
+        android:textStyle="italic"
+        android:textColor="@color/colorAccent"
+        style="?android:attr/windowAnimationStyle"
+        android:layout_below="@+id/Exitt"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="181dp" />
+
+
+</RelativeLayout>
